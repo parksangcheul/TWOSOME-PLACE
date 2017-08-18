@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <title>A TWOSOME PLACE</title>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <link rel="icon" href="favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="favicon.png">
+    <!--<link rel="shortcut icon" href="favicon.ico">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt ie 9]>
+    <script src="js/plugins/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/libs/modernizr-2.8.3.min.js"></script>
+    <script src="js/libs/jquery.min.js"></script>
+
+    <script src="js/plugins/jquery.easing.min.js"></script>
+    <script src="js/plugins/prefixfree.min.js"></script>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=69e740e3699664edef22be8aa9cab170"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/plugins/ScrollToPlugin.min.js"></script>
+
+    <script src="js/plugins/jquery.nicescroll.min.js"></script>
+    <script src="js/plugins/jquery.bxslider.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+
+</head>
+<body>
+<div class="container">
+
+    <!--HEADER-->
+ <div class="gnb">
+     <header>
+
+         <div class="inner">
+
+             <a href="/index.html" class="logo"></a>
+             <a href="#" id="toggle-btn"></a>
+             <ul class="sub-menu clearfix">
+                 <li><a href="#">Sign In</a></li>
+                 <li><a href="#">Sign Up</a></li>
+                 <li><a href="#">My Twosome</a></li>
+                 <li><a href="#">Find a Store</a></li>
+                 <li class="search">
+                     <form action="" method="post">
+                         <input type="text">
+                         <img src="img/icon_search.png" alt="search Button">
+                     </form>
+                 </li>
+             </ul>
+             <div class="main-menu toggle clearfi">
+                 <ul class="clearfix">
+                     <li>
+                         <a href="#">BRAND STORY</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="/SUB-1.html">브랜드이야기</a></h1>
+                                     <ul>
+                                         <li><a href="#">투썸플레이스 소개</a></li>
+                                         <li><a href="#">히스토리</a></li>
+                                         <li><a href="#">투썸플레이스 BI</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="/SUB-2.html">커피이야기</a></h1>
+                                     <ul>
+                                         <li><a href="#">투썸의 원두</a></li>
+                                         <li><a href="#">투썸의 블랜딩과 로스팅</a></li>
+                                         <li><a href="#">투썸의 시그니처 커피</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="/SUB-3.html">디저트이야기</a></h1>
+                                     <ul>
+                                         <li><a href="#">투썸의 디저트</a></li>
+                                         <li><a href="#">투썸의 시그니처디저트</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">MENU</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="#">커피&음료</a></h1>
+                                     <ul>
+                                         <li><a href="#">전체</a></li>
+                                         <li><a href="#">음료</a></li>
+                                         <li><a href="#">에스프레소</a></li>
+                                         <li><a href="#">블렌디드 프라페</a></li>
+                                         <li><a href="#">티 베리에이션</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">케이크</a></h1>
+                                     <ul>
+                                         <li><a href="#">전체</a></li>
+                                         <li><a href="#">무스케이크</a></li>
+                                         <li><a href="#">생크림케이크</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">디저트</a></h1>
+                                     <ul>
+                                         <li><a href="#">전체</a></li>
+                                         <li><a href="#">디저트</a></li>
+                                         <li><a href="#">초코렛</a></li>
+                                         <li><a href="#">아이스크림</a></li>
+                                         <li><a href="#">빙수</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">델리</a></h1>
+                                     <ul>
+                                         <li><a href="#">전체</a></li>
+                                         <li><a href="#">샌드위치</a></li>
+                                         <li><a href="#">샐러드</a></li>
+                                         <li><a href="#">베이커리</a></li>
+                                         <li><a href="#">세트메뉴</a></li>
+                                         <li><a href="#">스프</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">MD</a></h1>
+                                     <ul>
+                                         <li><a href="#">전체</a></li>
+                                         <li><a href="#">원두커피</a></li>
+                                         <li><a href="#">MD</a></li>
+                                         <li><a href="#">선물세트</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">STORE</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="#">매장정보</a></h1>
+                                     <ul>
+                                         <li><a href="#">신규 오픈 매장</a></li>
+                                         <li><a href="#">매장찾기</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">TWOSOME APP</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="#">투썸플레이스 APP</a></h1>
+                                     <ul>
+                                         <li><a href="#">투썸플레이스 APP이란?</a></li>
+                                         <li><a href="#">이용안내</a></li>
+                                         <li><a href="#">투썸플레이스 APP 주요 기능</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">EVENT & JOY</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="#">이벤트</a></h1>
+                                     <ul>
+                                         <li><a href="#">진행중인 이벤트</a></li>
+                                         <li><a href="#">종료된 이벤트</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">매장별 이벤트</a></h1>
+                                     <ul>
+                                         <li><a href="#">매장별 이벤트</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">멤버십&제휴카드</a></h1>
+                                     <ul>
+                                         <li><a href="#">CJ ONE</a></li>
+                                         <li><a href="#">제휴 안내</a></li>
+                                         <li><a href="#">모바일 식사권</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">디저트&커피클래스</a></h1>
+                                     <ul>
+                                         <li><a href="#">케이크 교실</a></li>
+                                         <li><a href="#">커피 교실</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">FRANCHISE</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="#">창업정보 및 절차</a></h1>
+                                     <ul>
+                                         <li><a href="#">창업조건</a></li>
+                                         <li><a href="#">예상 투자 비용</a></li>
+                                     </ul>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">온라인 창업상담</a></h1>
+                                 </li>
+                                 <li>
+                                     <h1><a href="#">FAQ</a></h1>
+                                     <ul>
+                                         <li><a href="#">자주 묻는 질문들</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">BUSINESS FAIR</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="#">창업설명회</a></h1>
+                                     <ul>
+                                         <li><a href="#">창업설명회 일정</a></li>
+                                         <li><a href="#">창업설명회 참석 예약</a></li>
+                                     </ul>
+                                 </li>
+                             </ul>
+                         </div>
+                     </li>
+                     <li>
+                         <a href="#">ROASTERY CAFE</a>
+                         <div class="mega-menu">
+                             <ul class="menu clearfix">
+                                 <li>
+                                     <h1><a href="SUB-4.html">로스터리 카페</a></h1>
+                                     <ul>
+                                         <li><a href="#">STORE VIEW</a></li>
+                                         <li><a href="#">ABOUT COFFEE</a></li>
+                                         <li><a href="#">SPECIAL MENU</a></li>
+                                         <li><a href="#">INFORMATION</a></li>
+                                     </ul>
+                             </ul>
+                         </div>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+
+         <div class="copy-inner">
+
+             <a href="/index.html" class="logo"></a>
+             <div class="copy-toggle-btn"><img src="img/menu-toggle.svg" alt=""></div>
+             <div class="copy-pos-menu">
+
+                 <ul class="copy-sub-menu clearfix">
+                     <li><a href="#">Sign In</a></li>
+                     <li><a href="#">Sign Up</a></li>
+                     <li><a href="#">My Twosome</a></li>
+                     <li><a href="#">Find a Store</a></li>
+                     <li class="copy-search">
+                         <form action="" method="post">
+                             <input type="text">
+                             <img src="img/icon_search.png" alt="search Button">
+                         </form>
+                     </li>
+                 </ul>
+                 <div class="copy-main-menu clearfi">
+                     <ul class="clearfix">
+                         <li>
+                             <a href="#">BRAND STORY</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="/SUB-1.html">브랜드이야기</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="/SUB-2.html">커피이야기</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="/SUB-3.html">디저트이야기</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">MENU</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="#">커피&음료</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">케이크</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">디저트</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">델리</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">MD</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">STORE</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="#">매장정보</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">TWOSOME APP</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="#">투썸플레이스 APP</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">EVENT & JOY</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="#">이벤트</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">매장별 이벤트</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">멤버십&제휴카드</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">디저트&커피클래스</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">FRANCHISE</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="#">창업정보 및 절차</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">온라인 창업상담</a></h1>
+                                     </li>
+                                     <li>
+                                         <h1><a href="#">FAQ</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">BUSINESS FAIR</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="#">창업설명회</a></h1>
+                                     </li>
+                                 </ul>
+                             </div>
+                         </li>
+                         <li>
+                             <a href="#">ROASTERY CAFE</a>
+                             <div class="copy-mega-menu">
+                                 <ul class="menu clearfix">
+                                     <li>
+                                         <h1><a href="SUB-4.html">로스터리 카페</a></h1>
+                                 </ul>
+                             </div>
+                         </li>
+                     </ul>
+
+                 </div>
+             </div>
+         </div>
+     </header>
+ </div>
+
+    <!--VISUAL-->
+        <div class="visual sub4 section">
+            <div class="title-group">
+                <img class="title fade-in" src="img/sub4-header-name.png" alt="메인제목">
+                <p class="lead fade-in">Premium dessert cafe <br>
+                    to sumpt place brand story.</p>
+                <p class="sub-lead fade-in">디저트이야기</p>
+            </div>
+        </div>
+
+    <section class="sub4-sec1 section">
+        <div class="inner">
+            <div class="find-store">
+                <h3 class="return-to-position to-right">Find a store</h3>
+                <div class="sub4-slider return-to-position to-right">
+                    <ul class="clearfix">
+                        <li><img src="img/sub4-se1-store1.jpg" alt=""></li>
+                        <li><img src="img/sub4-se1-store2.jpg" alt=""></li>
+                        <li><img src="img/sub4-se1-store3.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="sub4-sec2 section">
+        <div class="inner">
+            <div class="about-coffee clearfix">
+                <h3 class="return-to-position to-right">About Coffee</h3>
+                <div class="about-one return-to-position to-right">
+                    <h4>SPECIALTY COFFEE</h4>
+                    <p>나인티 플러스, 스페셜티, COE커피 등 투썸 큐그레이더와 로스터가 선별하여 매장에서 직접 로스팅한
+                        최고 품질의 여러 산지 원두를 경험하실 수 있습니다.</p>
+                </div>
+                <div class="about-two return-to-position to-right">
+                    <h4>ROASTERY</h4>
+                    <p>투썸 로스팅존에서는 전 세계에서 인증받은 최상급의 스페셜티 원두만을 로스팅하고 있으며 공인된
+                        큐그레이더 [원두 감별 전문가]와 전문 로스터가 최적의 로스팅 포인트를 찾아내어 수준 높은 스페셜티 커피를 완성합니다.</p>
+                </div>
+                <div class="about-three return-to-position to-right">
+                    <h4>COLD BREW SYSTEM</h4>
+                    <p>직접 로스팅한 원두가 7일간 저온 숙성된 후 다시 12시간 동안 저온 추출 과정을 거치게 됩니다.
+                        질소와 함께 에어징 과정을 거쳐 매일 스페셜티 콜드브루로 만들어 집니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sub4-sec3 section">
+        <div class="inner">
+            <div class="special-menu clearfix">
+                <h3 class="return-to-position to-right">About Coffee</h3>
+                <div class="special-one return-to-position to-right">
+                    <h4>COFFEE SAMPLER</h4>
+                    <p>저희 매장에서 직접 로스팅한 커피 샘플러는 에스프레소, 라떼, 콜드브루 2가지의 스페셜티 커피와
+                        그에 어울리는 핑거 디저트를 페어링하여 즐길 수 있습니다.</p>
+                </div>
+                <div class="special-two return-to-position to-right">
+                    <h4>BAKEN ALASKA</h4>
+                    <p>부드러운 하얀 머랭으로 감싸고 그 안에 달콤한 아이스크림과 초코시트로 가득 채운 후 에스프레소
+                        초코시럽을 곁들여 달콤 쌉싸름하게 즐기는 반전 매력 아이스크림 디저트입니다.</p>
+                </div>
+                <div class="special-three return-to-position to-right">
+                    <h4>BAKERY</h4>
+                    <p>스페셜티 원두를 사용하여 만든 커피 브레드, 매장에서 직접 구운 프리미엄 패스츄리를 비롯하여
+                        커피와 잘 어울리는 다양한 베이커리가 준비되어 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sub4-sec4 section">
+        <div class="inner">
+            <div class="information clearfix">
+                <h3 class="return-to-position to-right">Information</h3>
+                <div class="map-wrap return-to-position to-right">
+                    <div id="map"></div>
+                </div>
+                <div class="infor-text clearfix">
+                    <div class="new-non return-to-position to-right">
+                        <h4>투썸플레이스 신논현역점</h4>
+                        <p>서울시 강남구 강남대로 476 어반 하우스 1,2층
+                            <br><br>
+                            TEL 02.540.2388 FAX 02.540.2389<br>
+                            영업시간 07:00-24:00 All-Day
+                            <br><br>
+                            WWW.facebook.com/atwosomeplace<br>
+                            WWW.twosome.co.kr</p>
+                    </div>
+                    <div class="coffee-class return-to-position to-right">
+                        <h4>COFFEE CLASS</h4>
+                        <p>커피에 대한 지식을 배우고 체험할 수 <br>
+                            있는 다양한 프로그램이 준비되어 있습니다.</p>
+                        <h5>커피교실 신청안내</h5>
+                        <p>참가신청 및 문의사항은 매장으로 연락해주시기 바랍니다.</p>
+                        <img src="img/sub4-sec4-class.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section">
+
+    </section>
+
+
+
+    <!--FOOTER-->
+    <footer>
+        <div class="inner">
+
+            <div class="copy-group clearfix">
+                <div class="foot-logo"><a href="#"><img  src="img/footer-logo.svg" alt=""></a></div>
+                <div class="foot-mb-logo"><a href="#"><img  src="img/footer-mb-logo.svg" alt=""></a></div>
+                <p class="copyright">Dongho-ro 330, Jung-gu, Seoul, Korea 04560 CJ Cheiljedang Center CJ Foodville 7 ~ 8FBusiness number: 312-81-42519<br>
+                    CEO: Moon Moon | Privacy Officer: Bae | Customer Service: 1577-0700 | Fax: 02-6740-4349<br>
+                    Copyright@ 2015 CJ Foodville ALL RIGHTS RESERVED.</p>
+                <ul class="sns">
+                    <li><a href="#"><img src="img/foot-sns1.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot-sns2.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot-sns3.png" alt=""></a></li>
+                    <li><a href="#"><img src="img/foot-sns4.png" alt=""></a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </footer>
+</div>
+</body>
+</html>
